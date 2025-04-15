@@ -1,0 +1,39 @@
+.payment__card-light,
+.payment__card-dark {
+  width: 400px;
+  height: 200px;
+  box-shadow: 6px 6px 54px 0px rgba($blue_light, 0.1);
+  padding: 40px 20px 20px 20px;
+  border-radius: 20px;
+  transition: all .5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 12px 12px 84px 0px rgba($blue_light, 0.1);
+  }
+
+  .payment__card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .payment__card-amount {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .payment__card-description {
+    font-size: 16px;
+  }
+}
+
+.payment__card:hover {
+  transform: scale(1.05);
+}

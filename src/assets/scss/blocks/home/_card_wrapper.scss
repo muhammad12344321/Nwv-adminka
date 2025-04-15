@@ -1,0 +1,92 @@
+.home_title {
+    letter-spacing: 2px;
+    font-family: $nunito_fonts;
+    font-size: 42px;
+    text-shadow: 3px 3px 10px #555555b5;
+}
+
+.card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+
+    .card_item_dark,
+    .card_item {
+        height: 161px;
+        border-radius: 14px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.3s linear;
+        box-shadow: 0px 0px 14px 1px #5555555c;
+    }
+
+    .card_item_top {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .card__title {
+        font-family: $nunito_fonts;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    .card_sum {
+        padding-top: 16px;
+        font-family: $nunito_fonts;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 1px;
+    }
+
+    .card_icon_bg {
+        width: 60px;
+        height: 60px;
+        border-radius: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card_icon {
+        font-size: 44px;
+    }
+
+    .card_trend_dark,
+    .card_trend {
+        font-family: $nunito_fonts;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .card_trend_icon {
+            font-size: 20px;
+        }
+
+        .trend_span_dark,
+        .trend_span {
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+    }
+
+    .card_trend_up {
+        color: $green_light;
+    }
+
+    .card_trend_down {
+        color: $red_light;
+    }
+}

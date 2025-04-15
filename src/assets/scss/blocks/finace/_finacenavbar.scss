@@ -1,0 +1,52 @@
+.finace__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-top: 30px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 13px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .finace__card-light,
+  .finace__card-dark {
+    padding: 20px;
+    height: 55px;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    transition: all 0.5s linear;
+
+    &.active {
+      color: white;
+      background-color: $blue_light;
+      transform: scale(1.05);
+    }
+
+    &:hover {
+      color: white;
+      background-color: $blue_light;
+      transform: scale(1.08);
+    }
+
+    .finace__icon {
+      font-family: Nunito Sans;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0px;
+      object-fit: contain;
+    }
+  }
+}

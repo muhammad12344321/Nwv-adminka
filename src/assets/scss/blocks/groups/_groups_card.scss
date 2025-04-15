@@ -1,0 +1,49 @@
+.groups_card {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px 20px 20px 20px;
+  background: url("/src/assets/images/Pattern.svg") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0px 0px 31px 0px rgba(75, 75, 75, 0.3);
+  }
+
+  .groups_card_title {
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+
+  .groups_card_img {
+    width: 84px;
+    height: 84px;
+    border-radius: 9px;
+    object-fit: cover;
+  }
+
+  .groups_card_students {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 22px;
+  }
+
+  .groups_card_teachers {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 22px;
+
+    span {
+      color: $green_light;
+    }
+  }
+}

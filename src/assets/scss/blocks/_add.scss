@@ -1,0 +1,110 @@
+.add {
+    max-width: 1215px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__avatar {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+    }
+
+    &__file {
+        display: none;
+    }
+
+    &__upload-btn {
+        background-color: #3b82f6;
+        color: white;
+        padding: 6px 16px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: $nunito_fonts;
+        cursor: pointer;
+        transition: background 0.2s;
+
+
+        &:hover {
+            background-color: $blue_light;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        flex: 1;
+    }
+
+    .form__group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #333;
+            font-family: $nunito_fonts;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+        }
+
+        input {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border 0.2s;
+
+            &:focus {
+                outline: none;
+                border-color: #3b82f6;
+            }
+        }
+    }
+
+    .add__footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+
+        .add_btn {
+            bottom: 20px;
+            right: 20px;
+            padding: 6px 16px;
+            border-radius: 6px;
+            border: none;
+            background: $blue_light;
+            color: $white_light;
+            font-size: 16px;
+            font-family: $nunito_fonts;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+    }
+}

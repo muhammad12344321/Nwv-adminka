@@ -1,0 +1,158 @@
+.groups_page {
+  padding-top: 39px;
+
+  .groups_page_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  .groups_page_head_title {
+    font-family: $nunito_fonts;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  .groups_page_head_filters {
+    display: flex;
+    gap: 30px;
+  }
+
+  .groups_page_head_inputs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    .groups_page_head_inputs_input-light,
+    .groups_page_head_inputs_input-dark {
+      width: 340px;
+      height: 40px;
+      padding: 0 10px;
+      padding-right: 35px;
+      font-family: $nunito_fonts;
+      border-radius: 5px;
+      outline: none;
+      font-weight: 500;
+      transition: all 0.5s linear;
+
+      &:focus {
+        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .groups_page_head_inputs_btn {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $blue_light;
+    color: #fff;
+    border: none;
+    font-family: $nunito_fonts;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($blue_light, 10%);
+      box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .groups_page_head_filters_choose_teacher-light,
+  .groups_page_head_filters_choose_course-light,
+  .groups_page_head_filters_choose_teacher-dark,
+  .groups_page_head_filters_choose_course-dark {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: $nunito_fonts;
+    padding-left: 12px;
+    outline: none;
+    font-weight: 500;
+    appearance: none;
+    transition: color 0.5s linear;
+
+    &:focus {
+      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+    }
+  }
+
+  .groups_page_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: $white_light;
+  box-shadow: rgba($black_light, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+
+  h2 {
+    font-family: $nunito_fonts;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue_light;
+    text-align: center;
+  }
+
+  .modal-inputt {
+    margin-top: 10px;
+    width: 100%;
+
+    .MuiInputBase-root {
+      width: 100%;
+      border-radius: 5px;
+      background: $white_light;
+      border: 1px solid #ccc;
+      padding: 10px;
+      outline: none;
+      font-family: $nunito_fonts;
+
+      &:focus {
+        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+      }
+    }
+  }
+
+  .modal-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $blue_light;
+    color: #fff;
+    border: none;
+    font-family: $nunito_fonts;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($blue_light, 10%);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

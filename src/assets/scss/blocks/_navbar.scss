@@ -1,0 +1,116 @@
+.navbar,
+.navbar_dark {
+  min-width: 300px;
+  height: 100vh;
+  transition: min-width 0.3s ease;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+
+    img {
+      width: 60px;
+      height: 50px;
+    }
+  }
+
+  .navbar_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar_link.active,
+  .navbar_link_dark.active {
+    width: 90%;
+    height: 60px;
+    background: $blue_light;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    padding-left: 35px;
+    gap: 20px;
+    border: 2px solid #00000000;
+    border-radius: 0px 10px 10px 0px;
+
+    & .navbar_icon {
+      color: $white_light;
+      font-size: 28px;
+      padding-top: 5px;
+    }
+
+    & .navbar_text {
+      font-family: $nunito_fonts;
+      color: $white_light;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+
+  .navbar_link,
+  .navbar_link_dark {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    padding-left: 35px;
+    gap: 20px;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.4s linear;
+
+    &:hover {
+      background: $blue_light;
+      border: 2px solid #00000000;
+    }
+
+    &:hover .navbar_icon,
+    &:hover .navbar_text {
+      color: $white_light;
+    }
+
+    & .navbar_icon {
+      font-size: 28px;
+      padding-top: 5px;
+    }
+
+    & .navbar_text {
+      font-family: $nunito_fonts;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+  }
+}
+
+.navbar_open {
+  min-width: 100px;
+
+  .navbar_link.active,
+  .navbar_link_dark.active,
+  .navbar_link,
+  .navbar_link_dark {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    & .navbar_icon {
+      font-size: 36px;
+      padding-top: 5px;
+    }
+
+    & .navbar_text {
+      display: none;
+    }
+  }
+}

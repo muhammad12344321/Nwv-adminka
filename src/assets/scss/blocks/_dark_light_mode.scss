@@ -1,0 +1,318 @@
+// body
+
+.body_light {
+  background: $bg_light;
+  color: $black_light;
+}
+
+.body_dark {
+  background: $bg_dark;
+  color: $white_light;
+}
+
+// header
+
+.header {
+  background: $white_light;
+}
+
+.header_dark {
+  background: $black_dark;
+}
+
+.header_notice {
+  color: $blue_light;
+}
+
+.header_notice_dark {
+  color: $white_light;
+}
+
+.header_profile_title {
+  color: rgba($black_light, 0.8);
+}
+
+.header_profile_title_dark {
+  color: rgba($white_light, 0.8);
+}
+
+.header_input {
+  background: #f5f6fa;
+  border: 0.6px solid #d5d5d5;
+  color: $black_light;
+
+  &::placeholder {
+    color: #959595;
+  }
+}
+
+.header_input_dark {
+  background: #323d4e;
+  border: 0.6px solid #cfcfcf1c;
+  color: $white_light;
+
+  &::placeholder {
+    color: $white_light;
+  }
+}
+
+.header_search_icon {
+  color: #959595;
+}
+
+.header_search_icon_dark {
+  color: $white_light;
+}
+
+// navbar
+
+.navbar {
+  background: $white_light;
+}
+
+.navbar_dark {
+  background: $black_dark;
+}
+
+.navbar_link {
+  background: $white_light;
+  border: 2px solid $gray_light;
+
+  & .navbar_text {
+    color: $black_light;
+  }
+
+  & .navbar_icon {
+    color: $black_light;
+  }
+}
+
+.navbar_link_dark {
+  background: #323d4e;
+  border: 2px solid #cfcfcf1c;
+
+  & .navbar_text {
+    color: $white_light;
+  }
+
+  & .navbar_icon {
+    color: $white_light;
+  }
+}
+
+// home
+
+.card_item {
+  background: $white_light;
+}
+
+.card_item_dark {
+  background: $black_dark;
+}
+
+.trend_span {
+  color: $black_light;
+}
+
+.trend_span_dark {
+  color: $white_light;
+}
+
+.card_icon_bg_blue {
+  background: rgba($blue_light, 0.25);
+}
+
+.card_icon_bg_yellow {
+  background: rgba($yellow_light, 0.25);
+}
+
+.card_icon_bg_green {
+  background: rgba($green_light, 0.25);
+}
+
+.card_icon_bg_red {
+  background: rgba($red_light, 0.25);
+}
+
+.card_icon_bg_blue_dark {
+  background: $blue_light;
+}
+
+.card_icon_bg_yellow_dark {
+  background: $yellow_light;
+}
+
+.card_icon_bg_green_dark {
+  background: $green_light;
+}
+
+.card_icon_bg_red_dark {
+  background: $red_light;
+}
+
+.card_icon_blue {
+  color: $blue_light;
+}
+
+.card_icon_yellow {
+  color: $yellow_light;
+}
+
+.card_icon_green {
+  color: $green_light;
+}
+
+.card_icon_red {
+  color: $red_light;
+}
+
+.card_icon_white_dark {
+  color: $white_light;
+}
+
+// payment form
+
+.paymet-form-light {
+  background: url("/src/assets/images/Pattern.svg"), $white_light;
+}
+
+.paymet-form-dark {
+  background: url("/src/assets/images/Pattern.svg"), $black_dark;
+}
+
+.paymet-paid-light {
+  background: url("/src/assets/images/Pattern.svg"), $white_light;
+}
+
+.paymet-paid-dark {
+  background: url("/src/assets/images/Pattern.svg"), $black_dark;
+}
+
+.payment__inputs-light input {
+  background: $white_light;
+  border: 0.6px solid $white_light;
+  color: $black_light;
+
+  &::placeholder {
+    color: $black_dark;
+  }
+}
+.payment__inputs-dark input {
+  background: #323d4e;
+  border: 0.6px solid #cfcfcf1c;
+  color: $white_light;
+
+  &::placeholder {
+    color: $white_light;
+  }
+}
+
+.receipt__form-select-light {
+  background-color: $white_light;
+  color: $black_dark;
+  background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px
+    center;
+  background-size: 16px;
+}
+.receipt__form-select-dark {
+  background-color: $black_dark;
+  color: $white_light;
+  background: url("/src/assets/images/select-icon-white.png") no-repeat right
+    10px center;
+  background-size: 14px;
+}
+
+.payment__btn-light {
+  background: $white_light;
+}
+.payment__btn-dark {
+  background: $black_dark;
+  color: $white_light;
+}
+
+// payment card
+
+.payment__card-light {
+  background: url("/src/assets/images/Pattern.svg"), $white_light;
+}
+
+.payment__card-dark {
+  background: url("/src/assets/images/Pattern.svg"), $black_dark;
+}
+
+// group
+
+.groups_page_head_inputs_input-light {
+  background: $white_light;
+  border: 0.6px solid #d5d5d5;
+  color: $black_light;
+
+  &::placeholder {
+    color: $black_dark;
+  }
+}
+.groups_page_head_inputs_input-dark {
+  background: #323d4e;
+  border: 0.6px solid #cfcfcf1c;
+  color: $white_light;
+
+  &::placeholder {
+    color: $white_light;
+  }
+}
+
+.groups_card-light {
+  color: $black_light;
+}
+.groups_card-dark {
+  color: $white_light;
+}
+
+.groups_page_head_filters_choose_teacher-light,
+.groups_page_head_filters_choose_course-light {
+  background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px
+      center,
+    $white_light;
+  border: 0.6px solid #d5d5d5;
+  color: $black_light;
+  background-size: 16px;
+}
+
+.groups_page_head_filters_choose_teacher-dark,
+.groups_page_head_filters_choose_course-dark {
+  background: url("/src/assets/images/select-icon-white.png") no-repeat right
+      10px center,
+    $black_dark;
+  border: 0.6px solid #cfcfcf1c;
+  color: $white_light;
+  background-size: 12px;
+}
+
+// finace navbar
+
+.finace__card-light {
+  background: $white_light;
+  color: $black_light;
+  box-shadow: 0px 0px 15px 1px rgba(34, 60, 80, 0.2);
+}
+.finace__card-dark {
+  background: $black_dark;
+  color: $white_light;
+  box-shadow: 0px 0px 8px 2px rgba(216, 216, 216, 0.2);
+}
+
+// translate
+
+.goog-te-gadget-simple-light {
+  background: $white_light;
+  span {
+    color: $black_light;
+  }
+}
+.goog-te-gadget-simple-dark {
+  background: $black_dark;
+
+  span {
+    color: $white_light;
+  }
+}

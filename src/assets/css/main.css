@@ -1,0 +1,1742 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+.body_light {
+  background: #f5f6fa;
+  color: #202224;
+}
+
+.body_dark {
+  background: #1b2431;
+  color: #fff;
+}
+
+.header {
+  background: #fff;
+}
+
+.header_dark {
+  background: #273142;
+}
+
+.header_notice {
+  color: #4880ff;
+}
+
+.header_notice_dark {
+  color: #fff;
+}
+
+.header_profile_title {
+  color: rgba(32, 34, 36, 0.8);
+}
+
+.header_profile_title_dark {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header_input {
+  background: #f5f6fa;
+  border: 0.6px solid #d5d5d5;
+  color: #202224;
+}
+.header_input::-moz-placeholder {
+  color: #959595;
+}
+.header_input::placeholder {
+  color: #959595;
+}
+
+.header_input_dark {
+  background: #323d4e;
+  border: 0.6px solid rgba(207, 207, 207, 0.1098039216);
+  color: #fff;
+}
+.header_input_dark::-moz-placeholder {
+  color: #fff;
+}
+.header_input_dark::placeholder {
+  color: #fff;
+}
+
+.header_search_icon {
+  color: #959595;
+}
+
+.header_search_icon_dark {
+  color: #fff;
+}
+
+.navbar {
+  background: #fff;
+}
+
+.navbar_dark {
+  background: #273142;
+}
+
+.navbar_link {
+  background: #fff;
+  border: 2px solid #d5d5d5;
+}
+.navbar_link .navbar_text {
+  color: #202224;
+}
+.navbar_link .navbar_icon {
+  color: #202224;
+}
+
+.navbar_link_dark {
+  background: #323d4e;
+  border: 2px solid rgba(207, 207, 207, 0.1098039216);
+}
+.navbar_link_dark .navbar_text {
+  color: #fff;
+}
+.navbar_link_dark .navbar_icon {
+  color: #fff;
+}
+
+.card_item {
+  background: #fff;
+}
+
+.card_item_dark {
+  background: #273142;
+}
+
+.trend_span {
+  color: #202224;
+}
+
+.trend_span_dark {
+  color: #fff;
+}
+
+.card_icon_bg_blue {
+  background: rgba(72, 128, 255, 0.25);
+}
+
+.card_icon_bg_yellow {
+  background: rgba(255, 213, 109, 0.25);
+}
+
+.card_icon_bg_green {
+  background: rgba(0, 182, 155, 0.25);
+}
+
+.card_icon_bg_red {
+  background: rgba(249, 60, 101, 0.25);
+}
+
+.card_icon_bg_blue_dark {
+  background: #4880ff;
+}
+
+.card_icon_bg_yellow_dark {
+  background: #ffd56d;
+}
+
+.card_icon_bg_green_dark {
+  background: #00b69b;
+}
+
+.card_icon_bg_red_dark {
+  background: #f93c65;
+}
+
+.card_icon_blue {
+  color: #4880ff;
+}
+
+.card_icon_yellow {
+  color: #ffd56d;
+}
+
+.card_icon_green {
+  color: #00b69b;
+}
+
+.card_icon_red {
+  color: #f93c65;
+}
+
+.card_icon_white_dark {
+  color: #fff;
+}
+
+.paymet-form-light {
+  background: url("/src/assets/images/Pattern.svg"), #fff;
+}
+
+.paymet-form-dark {
+  background: url("/src/assets/images/Pattern.svg"), #273142;
+}
+
+.paymet-paid-light {
+  background: url("/src/assets/images/Pattern.svg"), #fff;
+}
+
+.paymet-paid-dark {
+  background: url("/src/assets/images/Pattern.svg"), #273142;
+}
+
+.payment__inputs-light input {
+  background: #fff;
+  border: 0.6px solid #fff;
+  color: #202224;
+}
+.payment__inputs-light input::-moz-placeholder {
+  color: #273142;
+}
+.payment__inputs-light input::placeholder {
+  color: #273142;
+}
+
+.payment__inputs-dark input {
+  background: #323d4e;
+  border: 0.6px solid rgba(207, 207, 207, 0.1098039216);
+  color: #fff;
+}
+.payment__inputs-dark input::-moz-placeholder {
+  color: #fff;
+}
+.payment__inputs-dark input::placeholder {
+  color: #fff;
+}
+
+.receipt__form-select-light {
+  background-color: #fff;
+  color: #273142;
+  background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px center;
+  background-size: 16px;
+}
+
+.receipt__form-select-dark {
+  background-color: #273142;
+  color: #fff;
+  background: url("/src/assets/images/select-icon-white.png") no-repeat right 10px center;
+  background-size: 14px;
+}
+
+.payment__btn-light {
+  background: #fff;
+}
+
+.payment__btn-dark {
+  background: #273142;
+  color: #fff;
+}
+
+.payment__card-light {
+  background: url("/src/assets/images/Pattern.svg"), #fff;
+}
+
+.payment__card-dark {
+  background: url("/src/assets/images/Pattern.svg"), #273142;
+}
+
+.groups_page_head_inputs_input-light {
+  background: #fff;
+  border: 0.6px solid #d5d5d5;
+  color: #202224;
+}
+.groups_page_head_inputs_input-light::-moz-placeholder {
+  color: #273142;
+}
+.groups_page_head_inputs_input-light::placeholder {
+  color: #273142;
+}
+
+.groups_page_head_inputs_input-dark {
+  background: #323d4e;
+  border: 0.6px solid rgba(207, 207, 207, 0.1098039216);
+  color: #fff;
+}
+.groups_page_head_inputs_input-dark::-moz-placeholder {
+  color: #fff;
+}
+.groups_page_head_inputs_input-dark::placeholder {
+  color: #fff;
+}
+
+.groups_card-light {
+  color: #202224;
+}
+
+.groups_card-dark {
+  color: #fff;
+}
+
+.groups_page_head_filters_choose_teacher-light,
+.groups_page_head_filters_choose_course-light {
+  background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px center, #fff;
+  border: 0.6px solid #d5d5d5;
+  color: #202224;
+  background-size: 16px;
+}
+
+.groups_page_head_filters_choose_teacher-dark,
+.groups_page_head_filters_choose_course-dark {
+  background: url("/src/assets/images/select-icon-white.png") no-repeat right 10px center, #273142;
+  border: 0.6px solid rgba(207, 207, 207, 0.1098039216);
+  color: #fff;
+  background-size: 12px;
+}
+
+.finace__card-light {
+  background: #fff;
+  color: #202224;
+  box-shadow: 0px 0px 15px 1px rgba(34, 60, 80, 0.2);
+}
+
+.finace__card-dark {
+  background: #273142;
+  color: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(216, 216, 216, 0.2);
+}
+
+.goog-te-gadget-simple-light {
+  background: #fff;
+}
+.goog-te-gadget-simple-light span {
+  color: #202224;
+}
+
+.goog-te-gadget-simple-dark {
+  background: #273142;
+}
+.goog-te-gadget-simple-dark span {
+  color: #fff;
+}
+
+.container {
+  max-width: 95%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.global_wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.app {
+  width: 100%;
+}
+
+.header_dark,
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.header_dark .header_wrapper,
+.header .header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_dark .header_left,
+.header .header_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header_dark .header_burger,
+.header .header_burger {
+  font-size: 26px;
+  cursor: pointer;
+}
+.header_dark .header_search_icon_input,
+.header .header_search_icon_input {
+  position: relative;
+  width: 400px;
+}
+.header_dark .header_search_icon_dark,
+.header_dark .header_search_icon,
+.header .header_search_icon_dark,
+.header .header_search_icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+.header_dark .header_input_dark,
+.header_dark .header_input,
+.header .header_input_dark,
+.header .header_input {
+  width: 100%;
+  height: 38px;
+  border-radius: 19px;
+  padding-left: 45px;
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+.header_dark .header_input_dark:focus,
+.header_dark .header_input:focus,
+.header .header_input_dark:focus,
+.header .header_input:focus {
+  box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
+}
+.header_dark .header_right,
+.header .header_right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header_dark .header_right button,
+.header .header_right button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.header_dark .header_right button .sun,
+.header .header_right button .sun {
+  color: #fff;
+  font-size: 30px;
+}
+.header_dark .header_right button .moon,
+.header .header_right button .moon {
+  color: #4880ff;
+  font-size: 30px;
+}
+.header_dark .header_notice,
+.header_dark .header_notice_dark,
+.header .header_notice,
+.header .header_notice_dark {
+  font-size: 28px;
+}
+.header_dark .header_language,
+.header .header_language {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+.header_dark .header_language span,
+.header .header_language span {
+  font-weight: 700;
+}
+.header_dark .header_profile,
+.header .header_profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header_dark .header_profile .header_profile_avatar,
+.header .header_profile .header_profile_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
+}
+.header_dark .header_profile .header_profile_name,
+.header .header_profile .header_profile_name {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+}
+.header_dark .header_profile .header_profile_title_dark,
+.header_dark .header_profile .header_profile_title,
+.header .header_profile .header_profile_title_dark,
+.header .header_profile .header_profile_title {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar,
+.navbar_dark {
+  min-width: 300px;
+  height: 100vh;
+  transition: min-width 0.3s ease;
+}
+.navbar .logo,
+.navbar_dark .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.navbar .logo img,
+.navbar_dark .logo img {
+  width: 60px;
+  height: 50px;
+}
+.navbar .navbar_wrapper,
+.navbar_dark .navbar_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navbar .navbar_link.active,
+.navbar .navbar_link_dark.active,
+.navbar_dark .navbar_link.active,
+.navbar_dark .navbar_link_dark.active {
+  width: 90%;
+  height: 60px;
+  background: #4880ff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  padding-left: 35px;
+  gap: 20px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 0px 10px 10px 0px;
+}
+.navbar .navbar_link.active .navbar_icon,
+.navbar .navbar_link_dark.active .navbar_icon,
+.navbar_dark .navbar_link.active .navbar_icon,
+.navbar_dark .navbar_link_dark.active .navbar_icon {
+  color: #fff;
+  font-size: 28px;
+  padding-top: 5px;
+}
+.navbar .navbar_link.active .navbar_text,
+.navbar .navbar_link_dark.active .navbar_text,
+.navbar_dark .navbar_link.active .navbar_text,
+.navbar_dark .navbar_link_dark.active .navbar_text {
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.navbar .navbar_link,
+.navbar .navbar_link_dark,
+.navbar_dark .navbar_link,
+.navbar_dark .navbar_link_dark {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  padding-left: 35px;
+  gap: 20px;
+  border-radius: 0px 10px 10px 0px;
+  transition: 0.4s linear;
+}
+.navbar .navbar_link:hover,
+.navbar .navbar_link_dark:hover,
+.navbar_dark .navbar_link:hover,
+.navbar_dark .navbar_link_dark:hover {
+  background: #4880ff;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.navbar .navbar_link:hover .navbar_icon, .navbar .navbar_link:hover .navbar_text,
+.navbar .navbar_link_dark:hover .navbar_icon,
+.navbar .navbar_link_dark:hover .navbar_text,
+.navbar_dark .navbar_link:hover .navbar_icon,
+.navbar_dark .navbar_link:hover .navbar_text,
+.navbar_dark .navbar_link_dark:hover .navbar_icon,
+.navbar_dark .navbar_link_dark:hover .navbar_text {
+  color: #fff;
+}
+.navbar .navbar_link .navbar_icon,
+.navbar .navbar_link_dark .navbar_icon,
+.navbar_dark .navbar_link .navbar_icon,
+.navbar_dark .navbar_link_dark .navbar_icon {
+  font-size: 28px;
+  padding-top: 5px;
+}
+.navbar .navbar_link .navbar_text,
+.navbar .navbar_link_dark .navbar_text,
+.navbar_dark .navbar_link .navbar_text,
+.navbar_dark .navbar_link_dark .navbar_text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.navbar_open {
+  min-width: 100px;
+}
+.navbar_open .navbar_link.active,
+.navbar_open .navbar_link_dark.active,
+.navbar_open .navbar_link,
+.navbar_open .navbar_link_dark {
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 80%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_open .navbar_link.active .navbar_icon,
+.navbar_open .navbar_link_dark.active .navbar_icon,
+.navbar_open .navbar_link .navbar_icon,
+.navbar_open .navbar_link_dark .navbar_icon {
+  font-size: 36px;
+  padding-top: 5px;
+}
+.navbar_open .navbar_link.active .navbar_text,
+.navbar_open .navbar_link_dark.active .navbar_text,
+.navbar_open .navbar_link .navbar_text,
+.navbar_open .navbar_link_dark .navbar_text {
+  display: none;
+}
+
+.home_title {
+  letter-spacing: 2px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 42px;
+  text-shadow: 3px 3px 10px rgba(85, 85, 85, 0.7098039216);
+}
+
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 30px;
+}
+.card_wrapper .card_item_dark,
+.card_wrapper .card_item {
+  height: 161px;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 0px 0px 14px 1px rgba(85, 85, 85, 0.3607843137);
+}
+.card_wrapper .card_item_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.card_wrapper .card__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.card_wrapper .card_sum {
+  padding-top: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+.card_wrapper .card_icon_bg {
+  width: 60px;
+  height: 60px;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_wrapper .card_icon {
+  font-size: 44px;
+}
+.card_wrapper .card_trend_dark,
+.card_wrapper .card_trend {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card_wrapper .card_trend_dark .card_trend_icon,
+.card_wrapper .card_trend .card_trend_icon {
+  font-size: 20px;
+}
+.card_wrapper .card_trend_dark .trend_span_dark,
+.card_wrapper .card_trend_dark .trend_span,
+.card_wrapper .card_trend .trend_span_dark,
+.card_wrapper .card_trend .trend_span {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.card_wrapper .card_trend_up {
+  color: #00b69b;
+}
+.card_wrapper .card_trend_down {
+  color: #f93c65;
+}
+
+.finace__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-top: 30px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 13px;
+}
+.finace__navbar::-webkit-scrollbar {
+  display: none;
+}
+.finace__navbar .finace__card-light,
+.finace__navbar .finace__card-dark {
+  padding: 20px;
+  height: 55px;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  transition: all 0.5s linear;
+}
+.finace__navbar .finace__card-light.active,
+.finace__navbar .finace__card-dark.active {
+  color: white;
+  background-color: #4880ff;
+  transform: scale(1.05);
+}
+.finace__navbar .finace__card-light:hover,
+.finace__navbar .finace__card-dark:hover {
+  color: white;
+  background-color: #4880ff;
+  transform: scale(1.08);
+}
+.finace__navbar .finace__card-light .finace__icon,
+.finace__navbar .finace__card-dark .finace__icon {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mentors {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+  margin: 60px auto 0;
+}
+.mentors__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.mentors__header-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.mentors__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+.mentors__count {
+  font-size: 14px;
+  color: #555;
+}
+.mentors .button {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #4880ff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mentors__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.mentors__table thead {
+  background-color: #f9fafb;
+}
+.mentors__table thead th {
+  text-align: left;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+.mentors__table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+.mentors__table tbody tr td {
+  padding: 12px;
+  font-size: 17px;
+  color: #444;
+  font-family: "Nunito Sans", sans-serif;
+  border-bottom: 1px solid #eee;
+}
+.mentors .mentors_acions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.mentors__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+}
+.mentors__action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+
+.report h1 {
+  font-size: 50px;
+}
+
+.groups_page {
+  padding-top: 39px;
+}
+.groups_page .groups_page_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+}
+.groups_page .groups_page_head_title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+}
+.groups_page .groups_page_head_filters {
+  display: flex;
+  gap: 30px;
+}
+.groups_page .groups_page_head_inputs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.groups_page .groups_page_head_inputs .groups_page_head_inputs_input-light,
+.groups_page .groups_page_head_inputs .groups_page_head_inputs_input-dark {
+  width: 340px;
+  height: 40px;
+  padding: 0 10px;
+  padding-right: 35px;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  transition: all 0.5s linear;
+}
+.groups_page .groups_page_head_inputs .groups_page_head_inputs_input-light:focus,
+.groups_page .groups_page_head_inputs .groups_page_head_inputs_input-dark:focus {
+  box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
+}
+.groups_page .groups_page_head_inputs .search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+.groups_page .groups_page_head_inputs_btn {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4880ff;
+  color: #fff;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.groups_page .groups_page_head_inputs_btn:hover {
+  background-color: #155dff;
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+}
+.groups_page .groups_page_head_filters_choose_teacher-light,
+.groups_page .groups_page_head_filters_choose_course-light,
+.groups_page .groups_page_head_filters_choose_teacher-dark,
+.groups_page .groups_page_head_filters_choose_course-dark {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  padding-left: 12px;
+  outline: none;
+  font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition: color 0.5s linear;
+}
+.groups_page .groups_page_head_filters_choose_teacher-light:focus,
+.groups_page .groups_page_head_filters_choose_course-light:focus,
+.groups_page .groups_page_head_filters_choose_teacher-dark:focus,
+.groups_page .groups_page_head_filters_choose_course-dark:focus {
+  box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
+}
+.groups_page .groups_page_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(32, 34, 36, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4880ff;
+  text-align: center;
+}
+.modal .modal-inputt {
+  margin-top: 10px;
+  width: 100%;
+}
+.modal .modal-inputt .MuiInputBase-root {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+.modal .modal-inputt .MuiInputBase-root:focus {
+  box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
+}
+.modal .modal-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4880ff;
+  color: #fff;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.modal .modal-button:hover {
+  background-color: #155dff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.groups_card {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px 20px 20px 20px;
+  background: url("/src/assets/images/Pattern.svg") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.groups_card:hover {
+  box-shadow: 0px 0px 31px 0px rgba(75, 75, 75, 0.3);
+}
+.groups_card .groups_card_title {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.groups_card .groups_card_img {
+  width: 84px;
+  height: 84px;
+  border-radius: 9px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.groups_card .groups_card_students {
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 900;
+  padding-top: 22px;
+}
+.groups_card .groups_card_teachers {
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 22px;
+}
+.groups_card .groups_card_teachers span {
+  color: #00b69b;
+}
+
+.payment__card-light,
+.payment__card-dark {
+  width: 400px;
+  height: 200px;
+  box-shadow: 6px 6px 54px 0px rgba(72, 128, 255, 0.1);
+  padding: 40px 20px 20px 20px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.payment__card-light:hover,
+.payment__card-dark:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 84px 0px rgba(72, 128, 255, 0.1);
+}
+.payment__card-light .payment__card-title,
+.payment__card-dark .payment__card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.payment__card-light .payment__card-amount,
+.payment__card-dark .payment__card-amount {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.payment__card-light .payment__card-description,
+.payment__card-dark .payment__card-description {
+  font-size: 16px;
+}
+
+.payment__card:hover {
+  transform: scale(1.05);
+}
+
+.payment__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.payment__wrapper .payment__left {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 80px;
+}
+
+.payment__title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 40px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.11px;
+  text-align: center;
+}
+
+.paymet-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+.paymet-wrapper .paymet-form-light,
+.paymet-wrapper .paymet-form-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  height: 620px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 54px 0px rgba(72, 128, 255, 0.1);
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.paymet-wrapper .paymet-form-light:hover,
+.paymet-wrapper .paymet-form-dark:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 84px 0px rgba(72, 128, 255, 0.1);
+}
+.paymet-wrapper .paymet-form-light .receipt-form,
+.paymet-wrapper .paymet-form-dark .receipt-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+.paymet-wrapper .paymet-form-light .receipt-form .chek__title,
+.paymet-wrapper .paymet-form-dark .receipt-form .chek__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.paymet-wrapper .paymet-form-light .receipt-form .chek__title h2,
+.paymet-wrapper .paymet-form-dark .receipt-form .chek__title h2 {
+  margin-top: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.11px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.paymet-wrapper .paymet-form-light .payment__inputs-light,
+.paymet-wrapper .paymet-form-light .payment__inputs-dark,
+.paymet-wrapper .paymet-form-dark .payment__inputs-light,
+.paymet-wrapper .paymet-form-dark .payment__inputs-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.paymet-wrapper .paymet-form-light .payment__inputs-light input,
+.paymet-wrapper .paymet-form-light .payment__inputs-light textarea,
+.paymet-wrapper .paymet-form-light .payment__inputs-dark input,
+.paymet-wrapper .paymet-form-light .payment__inputs-dark textarea,
+.paymet-wrapper .paymet-form-dark .payment__inputs-light input,
+.paymet-wrapper .paymet-form-dark .payment__inputs-light textarea,
+.paymet-wrapper .paymet-form-dark .payment__inputs-dark input,
+.paymet-wrapper .paymet-form-dark .payment__inputs-dark textarea {
+  width: 360px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 3px 3px 18px 0px rgba(72, 128, 255, 0.1);
+}
+.paymet-wrapper .paymet-form-light .payment__inputs input:focus,
+.paymet-wrapper .paymet-form-light .payment__inputs textarea:focus,
+.paymet-wrapper .paymet-form-dark .payment__inputs input:focus,
+.paymet-wrapper .paymet-form-dark .payment__inputs textarea:focus {
+  box-shadow: 6px 6px 54px 0px rgba(72, 128, 255, 0.1);
+}
+.paymet-wrapper .paymet-form-light .receipt__form-select-light,
+.paymet-wrapper .paymet-form-light .receipt__form-select-dark,
+.paymet-wrapper .paymet-form-dark .receipt__form-select-light,
+.paymet-wrapper .paymet-form-dark .receipt__form-select-dark {
+  width: 150px;
+  height: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 13px 61px 0px rgba(169, 169, 169, 0.37);
+  border: none;
+  outline: none;
+  transition: color 0.5s linear;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.paymet-wrapper .paymet-form-light .peceipt__wrapper-two,
+.paymet-wrapper .paymet-form-dark .peceipt__wrapper-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 20px;
+}
+.paymet-wrapper .paymet-form-light .peceipt__wrapper-two .payment__btn-light,
+.paymet-wrapper .paymet-form-light .peceipt__wrapper-two .payment__btn-dark,
+.paymet-wrapper .paymet-form-dark .peceipt__wrapper-two .payment__btn-light,
+.paymet-wrapper .paymet-form-dark .peceipt__wrapper-two .payment__btn-dark {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 13px 61px 0px rgba(169, 169, 169, 0.37);
+  border: none;
+  outline: none;
+  transition: color 0.5s linear;
+}
+.paymet-wrapper .paymet-form-light .peceipt__wrapper-two .payment__btn-light:hover,
+.paymet-wrapper .paymet-form-light .peceipt__wrapper-two .payment__btn-dark:hover,
+.paymet-wrapper .paymet-form-dark .peceipt__wrapper-two .payment__btn-light:hover,
+.paymet-wrapper .paymet-form-dark .peceipt__wrapper-two .payment__btn-dark:hover {
+  background: #fff;
+}
+.paymet-wrapper .paymet-form-light .receipt-for-two,
+.paymet-wrapper .paymet-form-dark .receipt-for-two {
+  width: 470px;
+  height: 620px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 12px 12px 31px #eeeeee, -12px -12px 31px #eeeeee;
+  padding: 20px;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  border: 1px solid #d5d5d5;
+}
+.paymet-wrapper .paymet-form-light .receipt-for-two:hover,
+.paymet-wrapper .paymet-form-dark .receipt-for-two:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 31px #d4d4d4, -12px -12px 31px #d4d4d4;
+}
+.paymet-wrapper .paymet-paid-light,
+.paymet-wrapper .paymet-paid-dark {
+  width: 470px;
+  height: 620px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 54px 0px rgba(72, 128, 255, 0.1);
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.paymet-wrapper .paymet-paid-light:hover,
+.paymet-wrapper .paymet-paid-dark:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 84px 0px rgba(72, 128, 255, 0.1);
+}
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-gadget-sub,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.goog-te-gadget-simple-light,
+.goog-te-gadget-simple-dark {
+  border: 0.6px solid #d5d5d5;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 5px;
+  margin: 6px;
+  transition: 0.5s all linear;
+}
+.goog-te-gadget-simple-light a,
+.goog-te-gadget-simple-dark a {
+  color: red;
+}
+
+.goog-te-gadget-simple img {
+  display: none;
+}
+
+.custom-translate-span {
+  display: none;
+}
+
+.add {
+  max-width: 1215px;
+  height: 310px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.add__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.add__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.add__avatar {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+.add__file {
+  display: none;
+}
+.add__upload-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add__upload-btn:hover {
+  background-color: #4880ff;
+}
+.add__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  flex: 1;
+}
+.add .form__group {
+  display: flex;
+  flex-direction: column;
+}
+.add .form__group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.add .form__group input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+.add .form__group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+.add .add__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.add .add__footer .add_btn {
+  bottom: 20px;
+  right: 20px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #4880ff;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}/*# sourceMappingURL=main.css.map */
