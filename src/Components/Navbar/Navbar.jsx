@@ -1,13 +1,13 @@
 import React from "react";
 import NavbarLink from "./NavbarLink/NavbarLink";
 import { MdOutlineHome } from "react-icons/md";
-
-import { MdOutlineGroups } from "react-icons/md";
-import { TbReport } from "react-icons/tb";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { PiStudentFill } from "react-icons/pi";
 import useDarkModeStore from "../../Store/DarcModeStore";
 import useBurgerStore from "../../Store/BurgerStore";
+import { MdReviews } from "react-icons/md";
+import { BiSolidLike } from "react-icons/bi";
+
+
 // img logo
 import Logo from "../../assets/images/Logo.png";
 
@@ -32,9 +32,14 @@ export default function Navbar() {
           text={"Учителя"}
         />
         <NavbarLink
-          href={"/students"}
-          icon={<PiStudentFill />}
-          text={"Студенты"}
+          href={"/reviews"}
+          icon={<MdReviews />}
+          text={"Отзывы"}
+        />
+        <NavbarLink
+          href={"/advantages"}
+          icon={<BiSolidLike />}
+          text={"Преимущества"}
         />
       </ul>
     </div>
